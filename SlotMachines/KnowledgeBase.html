@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>AGS Knowledge Base</title>
+
+  <link rel="stylesheet" href="http://turtleducks.duckdns.org:8080/assets/css/default.css">
+
+  <link rel="shortcut icon" href="https://playags.com/wp-content/uploads/2018/01/favicon.png" type="image/vnd.microsoft.icon" />
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="http://turtleducks.duckdns.org:8080/assets/js/default.js"></script>
+  <script src="http://turtleducks.duckdns.org:8080/assets/js/secret.js"></script>
+</head>
+
+<body>
+
+  <!-------------------->
+  <!--Start Navigation-->
+  <!-------------------->
+  <div id="nav-wrapper">
+    <ul id="nav">
+
+      <li id="home" class="navitem left active">
+        <a href="http://turtleducks.duckdns.org:8080">Home</a>
+      </li>
+
+      <li class="dropdown left">
+        <a href="javascript:void(0)" class="dropbtn">Slot Machines &#9660;</a>
+        <div class="dropdown-content">
+          <a href="http://turtleducks.duckdns.org:8080/SlotMachines/Cabinets.html">Cabinets</a>
+          <a href="http://turtleducks.duckdns.org:8080/SlotMachines/KnowledgeBase.html"> Knowledgebase</a>
+        </div>
+      </li>
+
+      <li class="dropdown left">
+        <a href="javascript:void(0)" class="dropbtn">Table Games &#9660;</a>
+        <div class="dropdown-content">
+          <a href="http://turtleducks.duckdns.org:8080/TableGames/Systems.html">Systems</a>
+          <a href="http://turtleducks.duckdns.org:8080/TableGames/KnowledgeBase.html">Knowledgebase</a>
+        </div>
+      </li>
+
+      <li class="dropdown left">
+        <a href="javascript:void(0)" class="dropbtn">Shufflers &#9660;</a>
+        <div class="dropdown-content">
+          <a href="http://turtleducks.duckdns.org:8080/Shufflers/Machines.html">Machines</a>
+          <a href="http://turtleducks.duckdns.org:8080/Shufflers/KnowledgeBase.html">Knowledgebase</a>
+        </div>
+      </li>
+
+
+      <li id="TroubleShooter" class="navitem right">
+        <a href="http://turtleducks.duckdns.org:8080/Contact.html">Contact</a>
+      </li>
+      <li id="TroubleShooter" class="navitem right">
+        <a href="http://turtleducks.duckdns.org:8080/TroubleShooter.html">TroubleShooter</a>
+      </li>
+      <li class="dropdown right">
+        <a href="javascript:void(0)" class="dropbtn">Links &#9660;</a>
+        <div class="dropdown-content">
+          <a href="https://boxlocker.playags.net/">Box Locker</a>
+          <a href="#">Stax Web Portal</a>
+          <a href="#">Bonus Spin Web Portal</a>
+        </div>
+      </li>
+
+    </ul>
+  </div>
+  <!------------------>
+  <!--End Navigation-->
+  <!------------------>
+
+  <!----------------------->
+  <!--Start Product Types-->
+  <!----------------------->
+  <div id="ProductTypes">
+    <h1>RNG Type</h1>
+    <form id="classlist" class="itemlist">
+      <div id="checkbutton">
+        <label for="Class2">
+          <input type="checkbox" class="itemcheckbox" id="Class2" name="Class" value="Class2" onchange="updateItemsClass('Class2')" checked>
+          <span>Class 2</span>
+        </label>
+      </div>
+
+      <div id="checkbutton">
+        <label for="Class3">
+          <input type="checkbox" class="itemcheckbox" id="Class3" name="Class" value="Class3" onchange="updateItemsClass('Class3')" checked>
+          <span>Class 3</span>
+        </label>
+      </div>
+
+      <div id="checkbutton">
+        <label for="HistoricalHorseRacing">
+          <input type="checkbox" class="itemcheckbox" id="HistoricalHorseRacing" name="Class" value="HistoricalHorseRacing" onchange="updateItemsClass('HistoricalHorseRacing')" checked>
+          <span>Historical Horse Racing</span>
+        </label>
+      </div>
+      <!--
+    <button type="button" value="Class" class="Class">Uncheck All</button>
+-->
+    </form>
+
+
+    <h1>Cabinet Type</h1>
+    <form id="cabinetlist" class="itemlist">
+
+      <div id="checkbutton">
+        <label for="OrionPortrait">
+          <input type="checkbox" class="itemcheckbox" id="OrionPortrait" name="Cabinet" value="OrionPortrait" onchange="updateItemsCabinet('OrionPortrait')" checked>
+          <span>Orion Portrait</span>
+        </label>
+      </div>
+
+      <div id="checkbutton">
+        <label for="OrionSlant">
+          <input type="checkbox" class="itemcheckbox" id="OrionSlant" name="Cabinet" value="OrionSlant" onchange="updateItemsCabinet('OrionSlant')" checked>
+          <span>Orion Slant</span>
+        </label>
+      </div>
+
+      <div id="checkbutton">
+        <label for="OrionCurve">
+          <input type="checkbox" class="itemcheckbox" id="OrionCurve" name="Cabinet" value="OrionCurve" onchange="updateItemsCabinet('OrionCurve')" checked>
+          <span>Orion Curve</span>
+        </label>
+      </div>
+
+      <div id="checkbutton">
+        <label for="OrionRise">
+          <input type="checkbox" class="itemcheckbox" id="OrionRise" name="Cabinet" value="OrionRise" onchange="updateItemsCabinet('OrionRise')" checked>
+          <span>Orion Rise</span>
+        </label>
+      </div>
+
+      <div id="checkbutton">
+        <label for="Icon">
+          <input type="checkbox" class="itemcheckbox" id="Icon" name="Cabinet" value="Icon" onchange="updateItemsCabinet('Icon')" checked>
+          <span>Icon</span>
+        </label>
+      </div>
+
+      <div id="checkbutton">
+        <label for="BigRed">
+          <input type="checkbox" class="itemcheckbox" id="BigRed" name="Cabinet" value="BigRed" onchange="updateItemsCabinet('BigRed')" checked>
+          <span>Big Red</span>
+        </label>
+      </div>
+      <!--
+    <button type="button" class="Cabinet">Uncheck All</button>
+  -->
+    </form>
+    <!--
+  <form id="itemlist">
+    <input type="checkbox" class="itemcheckbox" id="ProgressiveController" name="Controller" value="ProgressiveController" checked>
+    <label for="ProgressiveController">Progressive Controller</label>
+
+    <input type="checkbox" class="itemcheckbox" id="SignController" name="Controller" value="SignController" checked>
+    <label for="SignController">Sign Controller</label>
+
+    <button type="button" class="Controller">Uncheck All</button>
+  </form>
+-->
+
+    <h1>Player Type</h1>
+    <form id="PlayerType" class="itemlist">
+
+      <div id="checkbutton">
+        <label for="AtlasPlayer">
+          <input type="checkbox" class="itemcheckbox" id="AtlasPlayer" name="SoftwarePlayer" value="AtlasPlayer" onchange="updateItemsPlayer('AtlasPlayer')" checked>
+          <span>Atlas Player</span>
+        </label>
+      </div>
+
+      <div id="checkbutton">
+        <label for="ThreeDPlayer">
+          <input type="checkbox" class="itemcheckbox" id="ThreeDPlayer" name="SoftwarePlayer" value="ThreeDPlayer" onchange="updateItemsPlayer('ThreeDPlayer')" checked>
+          <span>3D Player</span>
+        </label>
+      </div>
+
+      <!--
+    <button type="button" class="SoftwarePlayer">Uncheck All</button>
+-->
+    </form>
+  </div>
+  <!----------------------->
+  <!--Start Product Types-->
+  <!----------------------->
+
+  <!------------------>
+  <!--Knowledge Base-->
+  <!------------------>
+
+  <div id="KnowledgeBase">
+
+    <div id="MonitorIsBlack"class="KnowledgeEntry">
+      <h1>Monitor is Black</h1>
+
+      <div class="OrionPortrait KnowledgeSubEntry">
+        <h2>Orion Portrait</h2>
+        <p>Check if the power cord pig tail is unplugged from the power supply</p>
+      </div>
+
+      <div class="Icon">
+        <h2>Icon</h2>
+        <p>It's normal for the top monitor to be black after a restart. Just unplug the monitor and plug it back in.</p>
+      </div>
+
+      <div>
+        <h2>General</h2>
+        <p>Multiple issues can cause the monitor to black out.</p>
+        <ul>
+          <li>Check the Video card and CPU fan, are they spinning.</li>
+          <ul>
+            <li>Video card is not spinning but CPU fan is, video card is the issue.</li>
+            <li>CPU fan is not spinning and all light on the cabinet are running. Reboot the game, if it runs for a little while and video works but the screen blacks out and the fan stops after a few minutes, the thermal sensor board on the side
+              of
+              the cpu heat sink could be acting up. Unplug the thermal sensor board from the IO board and see if it will stay running.&nbsp;</li>
+          </ul>
+          <li>Did the monitor, after power up, ever say "No Video Signal"&nbsp;</li>
+          <ul>
+            <li>No - if you have check everything you can think of. Look at the back of the monitor. Is the little LED lit and glowing RED. If it is, you have all the symptoms of a bad AD board. It&rsquo;s the one the Video cable goes into.&nbsp;
+            </li>
+            <li>Yes - monitor is probably fine. You need to keep troubleshooting.&nbsp; Did the motherboard make the deet-dee-deet-da-deet sound at boot?</li>
+            <ul>
+              <li>No- There's your issue. You need to fix the deet-dee-deet-da-deet.&nbsp; &nbsp;When the motherboard doesn't register the video card or ram sticks it will not send out the video signal and will not make the deet-dee-deet-da-deet
+                noise.&nbsp; Re-seat the video card and ram sticks.&nbsp;</li>
+              <li>Yes- hmm? Try using another device as a video source for the monitor to see it it's working.&nbsp; Then start swapping parts (video cable, video card, logic box).</li>
+            </ul>
+          </ul>
+        </ul>
+      </div>
+
+    </div>
+
+    <div id="1001-1005" class="KnowledgeEntry AtlasPlayer">
+      <h1>1001-1005 Ram Clear</h1>
+      <p>A 1001 through 1005 is a critical memory error. There is not always a definitive reason as to why it happened but some of the following events can cause it:</p>
+      <ul>
+        <li>Improper shut down. Always shut the game down through the operator menu and after shutting off the main power switch wait for all the lights inside the cabinet to go out before turning power back on.</li>
+        <li>Removing the NVRam Battery.</li>
+        <li>Having the data logger / debug level set to anything other than zero. This can be found in the Operator Control menu. Setting the data logger level to a number higher than zero will store more info on the SSD and cause it to fill up.
+          Only
+          set the data logger level to a number higher than zero when instructed to by AGS TAC support.</li>
+      </ul>
+    </div>
+
+    <div class="KnowledgeEntry AtlasPlayer">
+      <h1>1020 Ram Clear</h1>
+      <p>Just another number for a critical memory error. Clear Chip Must be used. <a href="#1001-1005">See 1001-1005</a>.</p>
+    </div>
+
+    <div class="KnowledgeEntry AtlasPlayer">
+      <h1>1023 Progressive Values no Longer Updating</h1>
+      <p>Restart the services on the progressive controller</p>
+    </div>
+
+    <div class="KnowledgeEntry AtlasPlayer">
+      <h1>1024 Unable to send Config to Brick</h1>
+      <p>Check to insure the game is set to talk to an external progressive controller. Reboot the game. If this doesn't work, log into the progressive controller and remove the asset from the active progressive pool then delete it from quick
+        config.
+        Reboot the game and it will show up in quick config, then add the asset to the progressive pools.</p>
+    </div>
+
+    <div class="KnowledgeEntry AtlasPlayer">
+      <h1>1052 Config Error Unable to Update Config at Brick</h1>
+      <p>The game is set to communicate with the progressive controller, but it. Check the network make sure you can ping the server from the game's network cable.&nbsp;</p>
+      <ol>
+        <li>If the issue is with only one game, you may need to:</li>
+        <ol>
+          <li>Remove the game from the progressive pools.</li>
+          <li>Delete the asset&nbsp;from quickconfig.</li>
+          <li>Reboot the game.</li>
+          <li>Re-add the game to&nbsp;the progressive pools.</li>
+        </ol>
+        <li>If the issue is with all the games:</li>
+        <ol>
+          <li>Check the network and switch for power and connectivity</li>
+          <li>Log into the controller and make sure services are still running.</li>
+        </ol>
+      </ol>
+      <p>As a last resort: If the game doesn't show up in quickcofig whi showing the 1052 error you may need to replace the SSD and System CF card.</p>
+    </div>
+
+    <div class="KnowledgeEntry AtlasPlayer">
+      <h1>1069 Validation Error</h1>
+      <p>Good Chance your SSD has a bad Sector or something is corrupt on the hard drive. If rebooting doesn't resolve the issue, replace the SSD.</p>
+    </div>
+
+    <div class="KnowledgeEntry AtlasPlayer">
+      <h1>1143 UPS Error</h1>
+      <p>If the UPS is up and running the first thing to do is plug the usb port from the ups into one of the blue ports on the motherboard inside the logic box. You may need to reboot the game after moving the usb. If this doesn't fix the error,
+        you
+        may have a bad UPS or usb cable.</p>
+    </div>
+
+    <div class="KnowledgeEntry AtlasPlayer">
+      <h1>1144 NVRAM Battery Voltage Low</h1>
+      <p>With the game powered off, spin the 3V cylinder battery behind the ribbon cable next to the video card. If the error continues to occur, you will need to replace the battery. Removing / replacing the battery will likely&nbsp;cause the game
+        to go in to a Ram Clear or cause the game to request the public key (not every jurisdiction)&nbsp;which is why we recommend spinning the battery like you would the batteries in a TV remote first.</p>
+      <p>If the casino seals the logic box and you cannot get into it, you can give the top left corner of the logic box a love punch, "This has not failed so far." - Anonymous&nbsp;Tech</p>
+    </div>
+
+    <div class="KnowledgeEntry AtlasPlayer">
+      <h1>1145 Insufficient Video Card</h1>
+      <p>Bad SSD</p>
+    </div>
+
+    <div class="KnowledgeEntry AtlasPlayer">
+      <h1>1146 Intrusion Detection Failure</h1>
+      <p>Check to see that the connector for all the Intrusion (cherry) switch is plugged into the Power IO</p>
+    </div>
+
+    <div class="KnowledgeEntry ThreeDPlayer">
+      <h1>6.100</h1>
+      <p>Error occurs at boot up.&nbsp; 6.100 is Critical Memory Error and 6.106 is Signature Calculation in progress.&nbsp; To fix this, Ram clear the Game two times in a row.</p>
+    </div>
+
+    <div class="KnowledgeEntry ThreeDPlayer">
+      <h1>6.106</h1>
+      <p>Error occurs at boot up.&nbsp; 6.100 is Critical Memory Error and 6.106 is Signature Calculation in progress.&nbsp; To fix this, Ram clear the Game two times in a row.</p>
+    </div>
+
+    <div class="KnowledgeEntry ThreeDPlayer">
+      <h1>6.8</h1>
+      <p>Validation Error. Most likely a bad SSD</p>
+    </div>
+
+    <div class="KnowledgeEntry ThreeDPlayer">
+      <h1>12.2 error (waiting for registration)</h1>
+      <ol>
+        <li>Delete the game from the progressive controller</li>
+        <li>Reboot the cabinet</li>
+        <li>Add the game back to the progressive controller</li>
+      </ol>
+    </div>
+
+    <div class="KnowledgeEntry ThreeDPlayer">
+      <h1>12.2 - 21.1 - 21.4</h1>
+      <p>Games not communicating with the progressive controller.&nbsp; If the games were just set up and the controller hasn't been configured yet this error will appear.</p>
+    </div>
+
+    <div class="KnowledgeEntry ThreeDPlayer">
+      <h1>23.12</h1>
+      <p>This is the first error that shows up when power up a new SSD. Ram-clear the game.</p>
+
+      <p>If this error continues to happen you will need to replace the SSD.</p>
+    </div>
+
+    <div class="KnowledgeEntry ThreeDPlayer">
+      <h1>25</h1>
+      <p>Error 25 and game keep rebooting.&nbsp;</p>
+
+      <p>single sas setup:</p>
+      <p>Ran into this issue again during theme change last week with error code 25 and game rebooting. From what I&rsquo;ve noticed, it&rsquo;s been resolved when casino player tracking is up and then I would have to ram clear the game again to
+        set
+        game to dual SAS, once dual SAS is set and game comes up, I would then ram clear again to set back to single SAS in which resolved the reboot and 25 error code. Didn&rsquo;t have to set to single SAS but did it to see if game would stay up
+        and it did. Game titles were tiger lord and peacock beauty running on 3D19.1.</p>
+      <p>I am having all kinds of issues with 19.1. Constant boot ups and configuration errors. Is it anybody available to help over the phone?<br /> <br /> Solution:<br /> <br /> We had to disconnect the SAS cable cord. Which was G-Tech in this
+        case. Option the games then reconnect the cable. Games came up with no issue after that.</p>
+    </div>
+
+    <div class="KnowledgeEntry AtlasPlayer ThreeDPlayer">
+      <h1>25.0 Asset # Error: Problem Reading</h1>
+      <p>The error showed up when the system CF is 3D but the SSD is Atlas.&nbsp; You cannot mix the two.</p>
+    </div>
+
+
+
+  </div>
+  <a class="returntotop" href="#">Top</a>
+</body>
+
+</html>

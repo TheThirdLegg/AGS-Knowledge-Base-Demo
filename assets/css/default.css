@@ -1,0 +1,231 @@
+@media screen and (max-width: 992px) {
+  #KnowledgeBase .KnowledgeEntry {
+    flex: 50%;
+  }
+}
+
+/* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  #KnowledgeBase .KnowledgeEntry {
+    flex-direction: column;
+  }
+
+  .topnav.responsive {
+    position: relative;
+  }
+
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url("../img/paper.jpg");
+  overflow-y: scroll;
+  /* Show vertical scrollbar */
+  font-family: 'Helvetica', 'Arial', sans-serif;
+}
+
+.AGS_logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+}
+
+#nav {
+  background-color: #0071B9;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+#nav .left {
+  float: left;
+}
+
+#nav .right {
+  float: right;
+}
+
+.navitem a, .dropbtn {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+.navitem a:hover, .dropdown:hover .dropbtn {
+  background-color: #000;
+  color: #fff;
+}
+
+#nav .active {
+  background-color: #F4831F;
+}
+
+.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+#checkbutton {
+  margin: 4px;
+  background-color: #fff;
+  border-radius: 4px;
+  overflow: auto;
+}
+
+#checkbutton:hover {
+  background: #0071B9;
+  color: #fff;
+}
+
+#checkbutton label span {
+  text-align: center;
+  padding: 3px 0px;
+  display: block;
+  font-size: 32px;
+  padding: 5px;
+}
+
+#checkbutton label input {
+  position: absolute;
+  top: -20px;
+}
+
+#checkbutton input:checked+span {
+  background-color: #0071B9;
+  color: #fff;
+}
+
+#ProductTypes {
+  margin-bottom: 25px;
+}
+
+#ProductTypes h1 {
+  text-align: center;
+}
+
+.itemlist {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+}
+
+#KnowledgeBase {
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 5%;
+  margin-left: 3%;
+  margin-right: 3%;
+}
+
+#KnowledgeBase .KnowledgeEntry {
+  flex: calc(33% - 4%);
+  margin-left: 2%;
+  margin-right: 2%;
+  background: #fff;
+  margin-bottom: 10px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+#KnowledgeBase #MonitorIsBlack {
+  flex: calc(66% - 4%);
+}
+
+#KnowledgeBase .KnowledgeEntry h1 {
+  margin-top: 0;
+  padding: 10px;
+  padding-left: 50px;
+  padding-right: 50px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  background-color: #F4831F;
+  color: #fff;
+  font-size: 48px;
+}
+
+#KnowledgeBase .KnowledgeEntry div h2 {
+  padding-left: 50px;
+  padding-right: 50px;
+  font-size: 32px;
+}
+
+#KnowledgeBase .KnowledgeEntry p, #KnowledgeBase .KnowledgeEntry li {
+  font-size: 24px;
+  margin-left: 50px;
+  margin-right: 50px;
+  line-height: 1.6;
+}
+
+.returntotop {
+  text-align: center;
+  line-height: 50px;
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  position: fixed;
+  bottom: 35px;
+  right: 35px;
+  background: #F4831F;
+  color: #fff;
+  text-decoration: none;
+}
+
+.Class3 {
+  display: none;
+}
+
+.HistoricalHorseRacing {
+  display: none;
+}
+
+.ThreeDPlayer {
+  display: none;
+}
